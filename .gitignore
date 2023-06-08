@@ -3,7 +3,7 @@
 *.vscode
 # *.png
 *.vs
-# *.sln
+*.sln
 *.cache
 *.exe
 *.resources

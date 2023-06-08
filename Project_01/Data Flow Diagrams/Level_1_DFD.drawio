@@ -1,0 +1,174 @@
+<mxfile host="65bd71144e">
+    <diagram id="eZHjbeVSxMaNZg9UAdV0" name="Page-1">
+        <mxGraphModel dx="1007" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="CUSTOMER" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="545" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="CANCELLATION" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="715" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="endArrow=classic;html=1;entryX=0.412;entryY=0.991;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="755" as="sourcePoint"/>
+                        <mxPoint x="330" y="755" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="200" y="770"/>
+                            <mxPoint x="200" y="660"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="Acknowledgement" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="6" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-15" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=classic;html=1;exitX=0.306;exitY=0.034;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.945;entryY=1.002;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="3" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="645" as="sourcePoint"/>
+                        <mxPoint x="440" y="645" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="Order ID" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="8" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="RETRIEVE AND DISPLAY" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="335" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="endArrow=classic;html=1;entryX=0.361;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="170" y="545" as="sourcePoint"/>
+                        <mxPoint x="170" y="455" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="Book Details" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="11" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1" y="17" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.743;exitY=0.927;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="10" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="385" as="sourcePoint"/>
+                        <mxPoint x="310" y="385" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Available Books&lt;br&gt;Information" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="13" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="11" y="-15" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="BOOKS" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="365" y="165" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="CUSTOMER RECORDS" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="905" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="18" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="UPDATE DATABASE" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="735" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="15" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="235" as="sourcePoint"/>
+                        <mxPoint x="310" y="235" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="Available Book Details" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="20" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="GENERATE ORDER ID AND TOTAL COST" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="305" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="GENERATE BILL" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="495" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="15" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="510" y="175" as="sourcePoint"/>
+                        <mxPoint x="610" y="175" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="Cost" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="27" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="23" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430" y="525" as="sourcePoint"/>
+                        <mxPoint x="530" y="525" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="Cost" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="29" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="24" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="635" as="sourcePoint"/>
+                        <mxPoint x="740" y="635" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="Order ID and Cost" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="31" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="endArrow=classic;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="330" y="595" as="sourcePoint"/>
+                        <mxPoint x="430" y="595" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="360" y="545"/>
+                            <mxPoint x="360" y="321"/>
+                            <mxPoint x="440" y="321"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="Order" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="33" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.022;entryY=0.561;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="635" as="sourcePoint"/>
+                        <mxPoint x="440" y="635" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="User Details and Payment" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="35" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="40" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="24" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="585" as="sourcePoint"/>
+                        <mxPoint x="380" y="585" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="330" y="589"/>
+                            <mxPoint x="330" y="565"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="Order ID" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="37" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-56" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="" style="endArrow=classic;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="585" as="sourcePoint"/>
+                        <mxPoint x="380" y="585" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="320" y="625"/>
+                            <mxPoint x="370" y="665"/>
+                            <mxPoint x="530" y="665"/>
+                            <mxPoint x="530" y="790"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="FeedBack" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="40" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
