@@ -1,0 +1,12 @@
+*.txt
+*.html
+*.vscode
+# *.png
+*.vs
+# *.sln
+*.cache
+*.exe
+*.resources
+*.pdb
+*bin
+*obj
