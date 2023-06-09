@@ -76,6 +76,12 @@
     <Compile Include="Exit_Page.Designer.cs">
       <DependentUpon>Exit_Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modify_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify_Page.Designer.cs">
+      <DependentUpon>Modify_Page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Personal_Info_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Exit_Page.resx">
       <DependentUpon>Exit_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify_Page.resx">
+      <DependentUpon>Modify_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Personal_Info_Page.resx">
       <DependentUpon>Personal_Info_Page.cs</DependentUpon>

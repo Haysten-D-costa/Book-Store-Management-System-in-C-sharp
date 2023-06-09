@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BookStoreMSystem
 {
@@ -24,6 +25,17 @@ namespace BookStoreMSystem
 
         private void login_button_Click(object sender, EventArgs e)
         {
+ //           string ConnectionString = "Data Source=HAYDC24\\SQLEXPRESS;Initial Catalog=UserInfo;Integrated Security=True"; // Address of SQL server and database...
+ //           SqlConnection con = new SqlConnection(ConnectionString); // Establish connection...
+ //           con.Open(); // Open connection...
+
+            // Prepare Query...
+ //           string Query = "INSERT INTO UserInformation01 VALUES (" + userName.Text + ", " + userEmail.Text + ", " + userPassword.Text + ")";
+ //           SqlCommand cmd = new SqlCommand(Query, con); // Execute Query...
+ //           cmd.ExecuteNonQuery();
+ //           con.Close(); // Close connection...
+
+ //           MessageBox.Show("Successfully Logged in !");
             Main_Page main_page = new Main_Page();
             main_page.Show();
         }

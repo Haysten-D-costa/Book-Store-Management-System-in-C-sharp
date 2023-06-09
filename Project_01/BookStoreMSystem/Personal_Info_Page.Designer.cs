@@ -71,8 +71,8 @@
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
             this.label2.Location = new System.Drawing.Point(253, 129);
             this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(10, 0, 50, 95);
-            this.label2.Size = new System.Drawing.Size(611, 313);
+            this.label2.Padding = new System.Windows.Forms.Padding(10, 20, 100, 55);
+            this.label2.Size = new System.Drawing.Size(661, 317);
             this.label2.TabIndex = 6;
             this.label2.Text = resources.GetString("label2.Text");
             this.label2.UseWaitCursor = true;
