@@ -31,14 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.showBooksButton = new System.Windows.Forms.Button();
-            this.booksDataGridView = new System.Windows.Forms.DataGridView();
             this.searchButton = new System.Windows.Forms.Button();
             this.searchTag = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.booksDataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.booksDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,54 +66,6 @@
             this.showBooksButton.Text = "SHOW BOOKS";
             this.showBooksButton.UseVisualStyleBackColor = false;
             this.showBooksButton.Click += new System.EventHandler(this.showBooks_Click);
-            // 
-            // booksDataGridView
-            // 
-            this.booksDataGridView.AllowUserToAddRows = false;
-            this.booksDataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.booksDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.booksDataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.booksDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.booksDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.booksDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.booksDataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.booksDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.booksDataGridView.EnableHeadersVisualStyles = false;
-            this.booksDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.booksDataGridView.Location = new System.Drawing.Point(200, 179);
-            this.booksDataGridView.Name = "booksDataGridView";
-            this.booksDataGridView.ReadOnly = true;
-            this.booksDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.booksDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.booksDataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.booksDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.booksDataGridView.RowTemplate.Height = 24;
-            this.booksDataGridView.Size = new System.Drawing.Size(756, 251);
-            this.booksDataGridView.TabIndex = 6;
-            this.booksDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // searchButton
             // 
@@ -149,6 +99,50 @@
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(499, 36);
             this.searchTextBox.TabIndex = 10;
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
+            // 
+            // booksDataGridView
+            // 
+            this.booksDataGridView.AllowUserToOrderColumns = true;
+            this.booksDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.booksDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.booksDataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.booksDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.booksDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.booksDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.booksDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.booksDataGridView.EnableHeadersVisualStyles = false;
+            this.booksDataGridView.GridColor = System.Drawing.SystemColors.ControlLightLight;
+            this.booksDataGridView.Location = new System.Drawing.Point(200, 179);
+            this.booksDataGridView.Name = "booksDataGridView";
+            this.booksDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.booksDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.booksDataGridView.RowHeadersWidth = 51;
+            this.booksDataGridView.RowTemplate.Height = 24;
+            this.booksDataGridView.Size = new System.Drawing.Size(768, 262);
+            this.booksDataGridView.TabIndex = 14;
+            this.booksDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.booksDataGridView_CellContentClick);
             // 
             // Books_Page
             // 
@@ -156,10 +150,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(982, 453);
+            this.Controls.Add(this.booksDataGridView);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.searchTag);
             this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.booksDataGridView);
             this.Controls.Add(this.showBooksButton);
             this.Controls.Add(this.label1);
             this.Name = "Books_Page";
@@ -175,9 +169,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button showBooksButton;
-        private System.Windows.Forms.DataGridView booksDataGridView;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Label searchTag;
         private System.Windows.Forms.TextBox searchTextBox;
+        private System.Windows.Forms.DataGridView booksDataGridView;
     }
 }

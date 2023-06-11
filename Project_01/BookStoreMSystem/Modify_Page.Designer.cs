@@ -44,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.insertRecordButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -53,8 +54,8 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(18, 17);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(100, 20, 90, 20);
-            this.label1.Size = new System.Drawing.Size(502, 80);
+            this.label1.Padding = new System.Windows.Forms.Padding(80, 20, 90, 20);
+            this.label1.Size = new System.Drawing.Size(482, 80);
             this.label1.TabIndex = 0;
             this.label1.Text = "MODIFY RECORD";
             // 
@@ -190,12 +191,25 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "BOOK GENRE              :";
             // 
+            // insertRecordButton
+            // 
+            this.insertRecordButton.BackColor = System.Drawing.Color.Black;
+            this.insertRecordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insertRecordButton.Location = new System.Drawing.Point(191, 376);
+            this.insertRecordButton.Name = "insertRecordButton";
+            this.insertRecordButton.Size = new System.Drawing.Size(339, 42);
+            this.insertRecordButton.TabIndex = 22;
+            this.insertRecordButton.Text = "INSERT RECORD";
+            this.insertRecordButton.UseVisualStyleBackColor = false;
+            this.insertRecordButton.Click += new System.EventHandler(this.insertRecordButton_Click);
+            // 
             // Modify_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(554, 453);
+            this.Controls.Add(this.insertRecordButton);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -239,5 +253,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button insertRecordButton;
     }
 }

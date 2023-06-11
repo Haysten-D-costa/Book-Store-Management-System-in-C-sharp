@@ -27,21 +27,20 @@ namespace BookStoreMSystem
         {
             string ConnectionString = "Data Source=HAYDC24\\SQLEXPRESS;Initial Catalog=BooksDB;Integrated Security=True";
             SqlConnection con = new SqlConnection(ConnectionString);
-            con.Open();
+        
+            string Query = "SELECT * FROM Book_Specification WHERE bookID LIKE @bookID + '%' OR bookName LIKE @bookName + '%' OR bookPublishDate LIKE @bookPublishDate + '%' OR bookAuthor LIKE @bookAuthor + '%' OR bookGenere LIKE @bookGenere + '%' OR bookPrice LIKE @bookPrice + '%'";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            sda.SelectCommand.Parameters.AddWithValue("@bookID",searchTextBox.Text.Trim());
+            sda.SelectCommand.Parameters.AddWithValue("@bookName",searchTextBox.Text.Trim());
+            sda.SelectCommand.Parameters.AddWithValue("@bookPublishDate",searchTextBox.Text.Trim());
+            sda.SelectCommand.Parameters.AddWithValue("@bookAuthor",searchTextBox.Text.Trim());
+            sda.SelectCommand.Parameters.AddWithValue("@bookGenere",searchTextBox.Text.Trim());
+            sda.SelectCommand.Parameters.AddWithValue("@bookPrice",searchTextBox.Text.Trim());
+            DataTable data = new DataTable();
+            sda.Fill(data);
 
-            string SearchData = searchTextBox.Text;
-
-            string Query = "SELECT * FROM Book_Specification WHERE bookID LIKE '%"+SearchData+"%'";
-            SqlCommand cmd = new SqlCommand(Query, con);
-            var reader = cmd.ExecuteReader();
-
-            booksDataGridView.Rows.Clear(); // ERROR ! This Clear() function is not working...
-
-            while(reader.Read())
-            {
-                booksDataGridView.Rows.Add(reader["bookID"]);
-            }
-
+            booksDataGridView.DataSource = data;
+            searchTextBox.Text = "";
             con.Close();
         }
 

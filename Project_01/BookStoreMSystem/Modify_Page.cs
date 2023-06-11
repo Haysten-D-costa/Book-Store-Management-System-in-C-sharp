@@ -82,6 +82,28 @@ namespace BookStoreMSystem
             bookGenreTextBox.Text = "";
             bookPDateTextBox.Text = "";
             bookPriceTextBox.Text = "";
+        }
+
+        private void insertRecordButton_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = "Data Source=HAYDC24\\SQLEXPRESS;Initial Catalog=BooksDB;Integrated Security=True";
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+
+            string Query = "INSERT INTO Book_Specification VALUES ('"+bookIdTextBox.Text+"', '"+bookNameTextBox.Text+"', '"+bookAuthorTextBox.Text+"', '"+bookGenreTextBox.Text+"', '"+ bookPDateTextBox.Text + "', '"+ bookPriceTextBox.Text + "') ";
+            SqlCommand cmd = new SqlCommand(Query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("Entry inserted Successfully !");
+
+            // Clearing the text boxes after operations...
+            bookIdTextBox.Text = "";
+            bookNameTextBox.Text = "";
+            bookAuthorTextBox.Text = "";
+            bookGenreTextBox.Text = "";
+            bookPDateTextBox.Text = "";
+            bookPriceTextBox.Text = "";
 
         }
     }
